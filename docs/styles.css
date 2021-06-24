@@ -4,6 +4,39 @@
     padding: 0;
 }
 
+/* Project 1 */
+
+.keys {
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.key {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    transition: all .07s;
+}
+
+.press-to-play {
+    font-size: 2em;
+}
+
+.instrument {
+    font-size: .75em;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: green;
+    box-shadow: 0 0 10px green;
+}
+
 
 /* Media Queries */
 
