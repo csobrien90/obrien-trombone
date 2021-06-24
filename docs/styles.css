@@ -1,8 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Arvo', serif;
 }
+
+/* Main Styles */
+
+/* Color Scheme
+
+Main: Dark Green #00702D
+Secondary: Medium Green #00D600
+Tertiary: Light Green #6DF86D
+Accent: Sky Blue #96DBFA
+Secondary Accent: Brown #673704
+Off White: #faf9f6
+Dark Gray: #666666
+
+*/
+
+header {
+    height: 8em;
+    display: flex;
+    align-items: flex-end;
+    background-color: #00702D;
+    color: #FAF9F6;
+}
+
+header a {
+    color: #6DF86D;
+}
+
+header h1 {
+    flex: 1;
+    padding: 1em;
+}
+
+header p {
+    flex: 1.5;
+    padding: 2em;
+}
+
+nav {
+    padding: 10px 5px;
+    background-color: #666666;
+}
+
+nav a {
+    display: block;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #00702D;
+    color:  #6DF86D;
+    border-radius: 15px 0;
+}
+
+nav a:hover {
+    background-color: #00D600;
+    color: #00702D;
+}
+
+h2 {
+    padding: 20px 20px 10px;
+    text-align: center;
+}
+
+.note {
+    font-size: .8em;
+    text-align: center;
+}
+
 
 /* Project 1 */
 
@@ -33,8 +105,8 @@
 
 .playing {
     transform: scale(1.1);
-    border-color: green;
-    box-shadow: 0 0 10px green;
+    border-color: #6DF86D;
+    box-shadow: 0 0 10px #6DF86D;
 }
 
 

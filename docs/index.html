@@ -28,6 +28,7 @@
                     <article id="project1">
 
                         <h2>Project 1 - JavaScript Drum Kit</h2>
+                        <p class="note">*currently only works on desktop</p>
 
                         <div class='keys'>
                             <div class="key" value="65"><h3 class="press-to-play">A</h3><p class="instrument">boom</p></div>
@@ -67,8 +68,9 @@
                                 this.classList.remove('playing');
                             }
 
-                            window.addEventListener('keydown', playSound);
                             const keys = document.querySelectorAll('.key');
+
+                            window.addEventListener('keydown', playSound);
                             keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
                         </script>
