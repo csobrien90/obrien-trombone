@@ -63,6 +63,17 @@
                                 key.classList.add('playing');
                             }
 
+                            //additional function 'clickSound' allows clicking to play - needed for use on mobile
+                            
+                            function clickSound(event) {
+                                const audio = document.querySelector(`audio[value='${event.srcElement.attributes.value.value}']`);
+                                const key = document.querySelector(`.key[value='${event.srcElement.attributes.value.value}']`);
+                                if (!audio) return;
+                                audio.currentTime = 0;
+                                audio.play();
+                                key.classList.add('playing');
+                            }
+
                             function removeTransition(event) {
                                 if (event.propertyName !== 'transform') return; //skip properties that are not 'transform'
                                 this.classList.remove('playing');
@@ -72,6 +83,7 @@
 
                             window.addEventListener('keydown', playSound);
                             keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+                            keys.forEach(key => key.addEventListener('click', clickSound))
 
                         </script>
 
