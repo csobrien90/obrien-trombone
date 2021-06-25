@@ -7,6 +7,10 @@
     font-family: 'Arvo', serif;
 }
 
+#wrapper {
+    width: 100%;
+}
+
 /* Main Styles */
 
 /* Color Scheme
@@ -24,7 +28,7 @@ Dark Gray: #666666
 header {
     height: 8em;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
     background-color: #00702D;
     color: #FAF9F6;
 }
@@ -34,13 +38,15 @@ header a {
 }
 
 header h1 {
-    flex: 1;
+    font-size: 1.4em;
     padding: 1em;
+    text-align: center;
 }
 
 header p {
-    flex: 1.5;
-    padding: 2em;
+    font-size: .8em;
+    padding: 0 4em;
+    text-align: center;
 }
 
 nav {
@@ -50,7 +56,7 @@ nav {
 
 nav a {
     display: block;
-    width: 20%;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -66,6 +72,7 @@ nav a:hover {
 }
 
 h2 {
+    font-size: 1.2em;
     padding: 20px 20px 10px;
     text-align: center;
 }
@@ -116,5 +123,29 @@ h2 {
 }
 
 @media screen and (min-width: 1000px) {
+    header {
+        flex-direction: row;
+        padding-top: 1em;
+    }
+    
+    header h1 {
+        font-size: 2em;
+        flex: 1;
+        padding: 1em;
+    }
+
+    header p {
+        font-size: 1em;
+        flex: 1.5;
+        padding: 3em;
+    }
+
+    nav a {
+        width: 20%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
 
 }
