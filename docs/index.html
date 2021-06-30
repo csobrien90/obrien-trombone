@@ -18,7 +18,8 @@
 
             <nav>
                 <ul>
-                    <li><a href="#project1">Project 1 - JavaScript Drum Kit</a></li>
+                    <li><a onclick="navDisplay('project1')">Project 1 - JavaScript Drum Kit</a></li>
+                    <li><a onClick="navDisplay('project2')">Project 2 - CSS and JS Clock</a></li>
                 </ul>
             </nav>
 
@@ -88,6 +89,41 @@
 
                     </article>
 
+                    <article id="project2">
+
+                        <h2>Project 2 - CSS and JS Clock</h2>
+
+                        <div class="clock">
+                        <div class="clock-center"></div>
+                            <div class="clock-face">
+                                <div class="hand hour-hand"></div>
+                                <div class="hand minute-hand"></div>
+                                <div class="hand second-hand"></div>
+                            </div>
+                        </div>
+
+                        <script>
+                            var secondHand = document.querySelector('.second-hand');
+                            var minuteHand = document.querySelector('.minute-hand');
+                            var hourHand = document.querySelector('.hour-hand');
+
+                            function setDate() {
+                                const now = new Date();
+                                var seconds = now.getSeconds();
+                                var minutes = now.getMinutes();
+                                var hours = now.getHours();
+
+                                secondHand.style.transform = `rotate(${seconds * 6}deg)`;
+                                minuteHand.style.transform = `rotate(${minutes * 6}deg)`;
+                                hourHand.style.transform = `rotate(${hours * 30}deg)`;
+
+                            }
+
+                            setInterval(setDate, 1000)
+
+                        </script>
+                    </article>
+
                 </section>
             </main>
 
@@ -95,5 +131,20 @@
         
         </div>
     </body>
+
+    <script>
+        function navDisplay(link) {
+            const linkToDisplay = document.getElementById(link);
+            
+            for (let i = 1; i < 3; i++) {
+                var projectById = document.querySelector(`#project${i}`);
+                if (projectById !== link) {
+                    projectById.style.display = "none";
+                }
+            }
+           
+            linkToDisplay.style.display = "unset";
+        }
+    </script>
 
 </html>
