@@ -20,6 +20,7 @@
                 <ul>
                     <li><a onclick="navDisplay('project1')">Project 1 - JavaScript Drum Kit</a></li>
                     <li><a onClick="navDisplay('project2')">Project 2 - CSS and JS Clock</a></li>
+                    <li><a onClick="navDisplay('project3')">Project 3 - Dynamic CSS Variables</a></li>
                 </ul>
             </nav>
 
@@ -122,6 +123,42 @@
                             setInterval(setDate, 1000)
 
                         </script>
+                    </article>
+
+                    <article id="project3">
+                      
+                        <h2>Project 3 - Dynamic CSS Variables <span id="colorful-note">(Updated with JS)</span></h2>
+
+                        <ul class="controls">
+                            <li>
+                                <label for="spacing">Spacing:</label>
+                                <input type="range" name="spacing" min="5" max="100" value="10" data-units="px">
+                            </li>
+                            <li>
+                                <label for="base">Background Color:</label>
+                                <input type="color" name="base" min="5" max="100" value="#ffc600" data-units="">
+                            </li>
+                            <li>
+                                <label for="blur">Blur:</label>
+                                <input type="range" name="blur" min="0" max="20" value="0" data-units="px"> 
+                            </li>
+                        </ul>
+
+                        <img src="project3/stock-louisville-skyline.jpg">
+
+                        <script>
+
+                            function adjustSettings() {
+                                const units = this.dataset.units
+                                document.documentElement.style.setProperty(`--${this.name}`, `${this.value}${units}`)
+                            }
+
+                            const inputs = document.querySelectorAll(".controls input");
+                            inputs.forEach(input => input.addEventListener('change', adjustSettings));
+                            inputs.forEach(input => input.addEventListener('mousemove', adjustSettings));
+
+                        </script>
+
                     </article>
 
                 </section>
