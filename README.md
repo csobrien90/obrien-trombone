@@ -1,3 +1,3 @@
-# Javascript: 30 projects in 30 days
+# Chad O'Brien Web Site
 
-This is a website to feature the projects I am making as a part of the 30 day JS challenge on https://javascript30.com/ 
+This website is my landing page as a freelance musician, front end web designer, and activist. This site also serves as my final project for the Code Louisville Front End Web Development class.
