@@ -2,7 +2,7 @@
     
     <head>
         <meta charset="utf-8">
-        <title>Javascript: 30 Projects in 30 Days</title>
+        <title>Chad O'Brien</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -10,178 +10,15 @@
     <body>
         <div id="wrapper">
 
-            <header>
-                <h1>The #JavaScript30 Challenge</h1>
-                <p>a page to feature my projects from the tutorials found on 
-                    <a href="http://javascript30.com" target="blank">javascript30.com</a></p>
-            </header>
+            <header></header>
 
-            <nav>
-                <ul>
-                    <li><a onclick="navDisplay('project1')">Project 1 - JavaScript Drum Kit</a></li>
-                    <li><a onClick="navDisplay('project2')">Project 2 - CSS and JS Clock</a></li>
-                    <li><a onClick="navDisplay('project3')">Project 3 - Dynamic CSS Variables</a></li>
-                </ul>
-            </nav>
+            <nav></nav>
 
-            <main>
-                <section>
-
-                    <article id="project1">
-
-                        <h2>Project 1 - JavaScript Drum Kit</h2>
-
-                        <div class='keys'>
-                            <div class="key" value="65"><h3 class="press-to-play">A</h3><p class="instrument">boom</p></div>
-                            <div class="key" value="83"><h3 class="press-to-play">S</h3><p class="instrument">clap</p></div>
-                            <div class="key" value="68"><h3 class="press-to-play">D</h3><p class="instrument">hi-hat (closed)</p></div>
-                            <div class="key" value="70"><h3 class="press-to-play">F</h3><p class="instrument">kick</p></div>
-                            <div class="key" value="71"><h3 class="press-to-play">G</h3><p class="instrument">hi-hat (open)</p></div>
-                            <div class="key" value="72"><h3 class="press-to-play">H</h3><p class="instrument">ride</p></div>
-                            <div class="key" value="74"><h3 class="press-to-play">J</h3><p class="instrument">snare</p></div>
-                            <div class="key" value="75"><h3 class="press-to-play">K</h3><p class="instrument">wood block</p></div>
-                            <div class="key" value="76"><h3 class="press-to-play">L</h3><p class="instrument">tom</p></div>
-                        </div>
-
-                        <audio src="project1/drum-sounds/boom.wav" value="65"></audio>
-                        <audio src="project1/drum-sounds/clap.wav" value="83"></audio>
-                        <audio src="project1/drum-sounds/hihat.wav" value="68"></audio>
-                        <audio src="project1/drum-sounds/kick.wav" value="70"></audio>
-                        <audio src="project1/drum-sounds/openhat.wav" value="71"></audio>
-                        <audio src="project1/drum-sounds/ride.wav" value="72"></audio>
-                        <audio src="project1/drum-sounds/snare.wav" value="74"></audio>
-                        <audio src="project1/drum-sounds/tink.wav" value="75"></audio>
-                        <audio src="project1/drum-sounds/tom.wav" value="76"></audio>
-
-                        <script>
-
-                            function playSound(event) {
-                                const audio = document.querySelector(`audio[value='${event.keyCode}']`);
-                                const key = document.querySelector(`.key[value='${event.keyCode}']`);
-                                if (!audio) return; //stops function if key pressed has no corresponding sound
-                                audio.currentTime = 0; //allows rapid playing of the same sound
-                                audio.play();
-                                key.classList.add('playing');
-                            }
-
-                            //additional function 'clickSound' allows clicking to play - needed for use on mobile
-                            
-                            function clickSound(event) {
-                                const audio = document.querySelector(`audio[value='${event.srcElement.attributes.value.value}']`);
-                                const key = document.querySelector(`.key[value='${event.srcElement.attributes.value.value}']`);
-                                if (!audio) return;
-                                audio.currentTime = 0;
-                                audio.play();
-                                key.classList.add('playing');
-                            }
-
-                            function removeTransition(event) {
-                                if (event.propertyName !== 'transform') return; //skip properties that are not 'transform'
-                                this.classList.remove('playing');
-                            }
-
-                            const keys = document.querySelectorAll('.key');
-
-                            window.addEventListener('keydown', playSound);
-                            keys.forEach(key => key.addEventListener('transitionend', removeTransition))
-                            keys.forEach(key => key.addEventListener('click', clickSound))
-
-                        </script>
-
-                    </article>
-
-                    <article id="project2">
-
-                        <h2>Project 2 - CSS and JS Clock</h2>
-
-                        <div class="clock">
-                        <div class="clock-center"></div>
-                            <div class="clock-face">
-                                <div class="hand hour-hand"></div>
-                                <div class="hand minute-hand"></div>
-                                <div class="hand second-hand"></div>
-                            </div>
-                        </div>
-
-                        <script>
-                            var secondHand = document.querySelector('.second-hand');
-                            var minuteHand = document.querySelector('.minute-hand');
-                            var hourHand = document.querySelector('.hour-hand');
-
-                            function setDate() {
-                                const now = new Date();
-                                var seconds = now.getSeconds();
-                                var minutes = now.getMinutes();
-                                var hours = now.getHours();
-
-                                secondHand.style.transform = `rotate(${seconds * 6}deg)`;
-                                minuteHand.style.transform = `rotate(${minutes * 6}deg)`;
-                                hourHand.style.transform = `rotate(${hours * 30}deg)`;
-
-                            }
-
-                            setInterval(setDate, 1000)
-
-                        </script>
-                    </article>
-
-                    <article id="project3">
-                      
-                        <h2>Project 3 - Dynamic CSS Variables <span id="colorful-note">(Updated with JS)</span></h2>
-
-                        <ul class="controls">
-                            <li>
-                                <label for="spacing">Spacing:</label>
-                                <input type="range" name="spacing" min="5" max="100" value="10" data-units="px">
-                            </li>
-                            <li>
-                                <label for="base">Background Color:</label>
-                                <input type="color" name="base" min="5" max="100" value="#ffc600" data-units="">
-                            </li>
-                            <li>
-                                <label for="blur">Blur:</label>
-                                <input type="range" name="blur" min="0" max="20" value="0" data-units="px"> 
-                            </li>
-                        </ul>
-
-                        <img src="project3/stock-louisville-skyline.jpg">
-
-                        <script>
-
-                            function adjustSettings() {
-                                const units = this.dataset.units
-                                document.documentElement.style.setProperty(`--${this.name}`, `${this.value}${units}`)
-                            }
-
-                            const inputs = document.querySelectorAll(".controls input");
-                            inputs.forEach(input => input.addEventListener('change', adjustSettings));
-                            inputs.forEach(input => input.addEventListener('mousemove', adjustSettings));
-
-                        </script>
-
-                    </article>
-
-                </section>
-            </main>
+            <main></main>
 
             <footer></footer>
         
         </div>
     </body>
-
-    <script>
-        function navDisplay(link) {
-            const linkToDisplay = document.getElementById(link);
-            
-            for (let i = 1; i < 3; i++) {
-                var projectById = document.querySelector(`#project${i}`);
-                if (projectById !== link) {
-                    projectById.style.display = "none";
-                }
-            }
-           
-            linkToDisplay.style.display = "unset";
-        }
-    </script>
 
 </html>

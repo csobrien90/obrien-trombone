@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arvo', serif;
 }
 
 #wrapper {
@@ -15,235 +12,22 @@
 
 /* Color Scheme
 
-Main: Dark Green #00702D
-Secondary: Medium Green #00D600
-Tertiary: Light Green #6DF86D
-Accent: Sky Blue #96DBFA
-Secondary Accent: Brown #673704
-Off White: #faf9f6
-Dark Gray: #666666
+Main: Medium Blue #557CBA
+Secondary: Light Blue #B3C8E9
+Tertiary: Dark Blue #003D6B (off white text)
+Accent: Brick Red #be6a52
+Secondary Accent: Dark Brown Red #883e31 (off white text)
+Off White: #e8eff9
+Off Black: #333333 (off white text)
 
 */
-
-header {
-    height: 8em;
-    display: flex;
-    flex-direction: column;
-    background-color: #00702D;
-    color: #FAF9F6;
-}
-
-header a {
-    color: #6DF86D;
-}
-
-header h1 {
-    font-size: 1.4em;
-    padding: 1em;
-    text-align: center;
-}
-
-header p {
-    font-size: .8em;
-    padding: 0 4em;
-    text-align: center;
-}
-
-nav {
-    padding: 10px 5px;
-    background-color: #666666;
-}
-
-nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 5px;
-    background-color: #00702D;
-    color:  #6DF86D;
-    border-radius: 15px 0;
-}
-
-nav a:hover {
-    background-color: #00D600;
-    color: #00702D;
-}
-
-h2 {
-    font-size: 1.2em;
-    padding: 20px 20px 10px;
-    text-align: center;
-}
-
-.note {
-    font-size: .8em;
-    text-align: center;
-}
-
-article {
-    display: none;
-}
-
-
-/* Project 1 */
-
-.keys {
-    width: fit-content;
-    margin: 30px auto;
-}
-
-.key {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    vertical-align: top;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid black;
-    transition: all .07s;
-}
-
-.press-to-play {
-    font-size: 2em;
-}
-
-.instrument {
-    font-size: .75em;
-}
-
-.playing {
-    transform: scale(1.1);
-    border-color: #6DF86D;
-    box-shadow: 0 0 10px #6DF86D;
-}
-
-
-/* Project 2 */
-
-.clock {
-    height: 200px;
-    width: 200px;
-    margin: 50px auto;
-    padding: 10px;
-    border: 10px solid black;
-    border-radius: 50%;
-    position: relative;
-    transform: rotate(90deg);
-}
-
-.clock-center {
-    height: 7px;
-    width: 7px;
-    border-radius: 50%;
-    background-color: black;
-    position: absolute;
-    top: 87px;
-    left: 87px;
-    z-index: 10;
-}
-
-.clock-face {
-    width: 100%;
-    height: 100%;
-    transform: translateY(-3px);
-}
-
-.hand {
-    height: 6px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    width: 50%;
-    transform-origin: 100%;
-    border-radius: 20px;
-}
-
-
-.hour-hand {
-    width: 30%;
-    right: 50%
-}
-
-
-/* Project 3 */
-
-:root {
-    --base: #ffc600;
-    --spacing: 10px;
-    --blur: 0;   
-}
-
-#colorful-note {
-    color: var(--base);
-}
-
-.controls {
-    width: 80%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto 30px;
-}
-
-.controls li {
-    margin: 10px auto;
-}
-
-.controls label {
-    margin-right: 5px;
-}
-
-#project3 img {
-    display: block;
-    max-width: 90%;
-    margin: 20px auto;
-    padding: var(--spacing);
-    background-color: var(--base);
-    filter: blur(var(--blur));
-}
 
 /* Media Queries */
 
 @media screen and (min-width: 570px) {
+
 }
 
 @media screen and (min-width: 1000px) {
-    header {
-        flex-direction: row;
-        padding-top: 1em;
-    }
-    
-    header h1 {
-        font-size: 2em;
-        flex: 1;
-        padding: 1em;
-    }
-
-    header p {
-        font-size: 1em;
-        flex: 1.5;
-        padding: 3em;
-    }
-
-    nav li {
-        display: inline-block;
-        width: 20%;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    /* Project 3 */
-
-    .controls {
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+   
 }
