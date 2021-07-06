@@ -8,19 +8,53 @@
     width: 100%;
 }
 
-/* Main Styles */
+/* 
 
-/* Color Scheme
+Color Scheme
 
-Main: Medium Blue #557CBA
+Main: Dark Blue #38578A (off white text)
 Secondary: Light Blue #B3C8E9
-Tertiary: Dark Blue #003D6B (off white text)
+Tertiary: Medium Blue #557CBA
 Accent: Brick Red #be6a52
 Secondary Accent: Dark Brown Red #883e31 (off white text)
 Off White: #e8eff9
 Off Black: #333333 (off white text)
 
 */
+
+/* Main Styles */
+
+header {
+    background-color: #38578A;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    flex: 1;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    padding: 10px;
+    flex-direction: column;
+}
+
+nav a {
+    color: #ffffff;
+}
 
 /* Media Queries */
 
