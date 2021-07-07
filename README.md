@@ -8,6 +8,7 @@ A navigation menu that expands and collapses properly at desktop and mobile size
 
 Use Flexbox to organize content areas based on mobile or desktop views. Simply applying a basic flex property so that text wraps as you change screen sizes does not count. You must actually rearrange content or perform some more advanced feature. For example, swapping from a single column layout to a two-column layout on desktop.
 
+Create your own original CSS animation. For example, create a loading spinner or menu animation. Note: CSS Animations are not included in the assigned Treehouse track, you will have to research this on your own
 
 ## JavaScript features
 
@@ -24,8 +25,6 @@ Create at least 3 variables (var, const, or let), set their values in JavaScript
 Use “:nth-child” or “nth-of-type” to style a series of elements on your page - for example, change the background color for every other row in a table 
 
 Perform a Web Accessibility Compliance review on your own site and document all the tools and testing you used to verify your site is accessible. This may involve a written write-up, screenshots, and other ways of showing that you evaluated your site for accessibility compliance. Include the report in your GitHub repository.
-
-Create your own original CSS animation. For example, create a loading spinner or menu animation. Note: CSS Animations are not included in the assigned Treehouse track, you will have to research this on your own
 
 
 ***JavaScript features***
