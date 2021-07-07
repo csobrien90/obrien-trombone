@@ -66,6 +66,8 @@ header {
 nav {
     flex: 1;
     flex-basis: 100%;
+    transition: height .2s;
+    height: 0;
 }
 
 nav ul {
@@ -95,10 +97,22 @@ nav a:hover {
 #hamburger-icon {
     width: 80px;
     height: 80px;
-    background-color: #333333;
     position: absolute;
     top: 15px;
     right: 15px;
+    padding: 12px 0;
+}
+
+#hamburger-icon:hover {
+    cursor: pointer;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 
 /* Media Queries */
@@ -113,6 +127,10 @@ nav a:hover {
     #logo img {
         left: 5%;
         width: 90%;
+    }
+
+    nav {
+        height: unset;
     }
     
     nav ul {
@@ -131,6 +149,7 @@ nav a:hover {
     #hamburger-icon {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 1000px) {
