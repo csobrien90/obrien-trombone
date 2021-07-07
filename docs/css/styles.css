@@ -118,6 +118,16 @@ nav a:hover {
     transition: transform .3s;
 }
 
+footer {
+    width: 100%;
+    background-color: #38578A;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 600px) {
@@ -179,4 +189,8 @@ nav a:hover {
         margin: 0 auto;
     }
 
+    footer {
+        margin: 0 auto;
+        width: 1000px;
+    }
 }
