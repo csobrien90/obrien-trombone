@@ -31,7 +31,7 @@ Off Black: #333333 (off white text)
 
 */
 
-/* Main Styles */
+/* Header and Footer Styles */
 
 header {
     background-color: #38578A;
@@ -132,6 +132,10 @@ footer {
     position: relative;
     bottom: 0;
 }
+
+/* Main Styles */
+
+
 
 /* Media Queries */
 
