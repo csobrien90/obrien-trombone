@@ -7,7 +7,7 @@
 
 .headshot {
     flex-grow: 1;
-    max-width: 90%;
+    max-width: 80%;
     margin: 5%;
 }
 
@@ -16,10 +16,15 @@
     text-align: center;
 }
 
+.biography h2 {
+    margin-bottom: 15px;
+}
+
 .about-links {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 4%;
 }
 
 .about-links li {
@@ -32,7 +37,20 @@
 /* Media Queries */
 
 @media screen and (min-width: 600px) {
+    .about-overview {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
+    .headshot {
+        flex-grow: 1;
+        max-width: 34%;
+        margin: 3%;
+    }
+
+    .biography {
+        margin: 5% 2%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
