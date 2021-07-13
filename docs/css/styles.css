@@ -54,8 +54,8 @@ header {
     font-family: sans-serif;
     font-weight: 500;
     position: absolute;
-    right: 24vw;
-    top: 6.5vw;
+    right: 22.5vw;
+    top: 6vw;
 }
 
 #logo img {
@@ -104,8 +104,8 @@ nav a:hover {
     width: 80px;
     height: 80px;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 1vw;
+    right: 1vw;
     padding: 12px 0;
 }
 
@@ -139,11 +139,21 @@ footer {
 
 /* Media Queries */
 
+@media screen and (min-width: 400px) {
+    #hamburger-icon {
+        top: 3vw;
+        right: 3vw;
+    }
+}
+
 @media screen and (min-width: 600px) {
+    header {
+        min-height: 16vw;
+    }
+
     #logo h1 {
         font-size: 7vw;
-        top: 6vw;
-        right: 9vw;
+        right: 8vw;
     }
     
     #logo img {
@@ -175,6 +185,10 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+
+    header {
+        min-height: 8vw;
+    }
 
     #wrapper {
         max-width: 1000px;
