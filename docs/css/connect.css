@@ -18,7 +18,35 @@ main section h2 {
 
 .event {
     margin: 10px;
-    padding: 5px;
+    border-radius: 10px;
+}
+
+.event:hover {
+    box-shadow: 0 0 5px black;
+}
+
+.event-heading {
+    background-color: #557CBA;
+    border-radius: 10px;
+}
+
+.event-title, .event-date {
+    width: 100%;
+}
+
+.event-title {
+    padding: 10px;
+}
+
+.event-date {
+    padding: 0 10px 10px;
+}
+
+.event-description {
+    background-color: #B3C8E9;
+    border-radius: 0 0 10px 10px;
+    height: 0;
+    overflow: hidden;
 }
 
 .connect-contact form {

@@ -48,8 +48,10 @@ function insertEvents() {
                 
                 html += `
                     <li class="event">
-                        <h3 class="event-title">${events[i]['title']}</h3>
-                        <p class="event-date">${events[i]['date']}</p>
+                        <div class="event-heading">
+                            <h3 class="event-title">${events[i]['title']}</h3>
+                            <p class="event-date">${events[i]['date']}</p>
+                        </div>
                         <p class="event-description">${events[i]['description']}</p>
                     </li>
                 `;
