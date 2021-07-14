@@ -1,0 +1,81 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    padding: 5px;  
+}
+
+main section h2 {
+    margin: 10px 0 5px;
+    text-align: center;
+}
+
+#events {
+    list-style-type: none;
+}
+
+.event {
+    margin: 10px;
+    padding: 5px;
+}
+
+.connect-contact form {
+    padding: 10px;
+}
+
+.contact-line {
+    display: block;
+    margin: 20px 0;
+}
+
+.contact-line label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#name, #email {
+    width: 50%;
+}
+
+#message {
+    width: 100%;
+    height: 200px;
+}
+
+.contact-line input[type="button"] {
+    padding: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    main {
+        flex-direction: row;
+    }
+
+    #event {
+        padding: 10px;
+    }
+
+    .connect-gigs {
+        flex: 1.4;
+    }
+
+    .connect-contact {
+        flex: 1;
+    }
+
+    #name, #email {
+        width: 200px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1000px) {
+    #event {
+        padding: 20px;
+    }
+}

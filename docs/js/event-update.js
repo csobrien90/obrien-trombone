@@ -19,7 +19,7 @@ const events = [
     {
         title: 'Christmas in July',
         date: 'Saturday, July 24, 2021 11am-1pm',
-        description: 'Join Santa’s Little Helpers, Inc, the Louisville Free Public Library, and the Louisville Jazz Initiative to celebrate the end of summer and the first anniversary of the Little Free Library at <strong>4301 Towne Center</strong> with live Christmas music, giveaways, and lots of fun! Come join us for this free, family event to support our regional foster children. We will be accepting gently used books for our library and welcoming special guest visitors including Derby City Kringle Santa Pat and Mrs. Claus.',
+        description: 'Join Santa’s Little Helpers, Inc, the Louisville Free Public Library, and the Louisville Jazz Initiative to celebrate the end of summer and the first anniversary of the <strong>Little Free Library at 4301 Towne Center</strong> with live Christmas music, giveaways, and lots of fun! Come join us for this free, family event to support our regional foster children. We will be accepting gently used books for our library and welcoming special guest visitors including Derby City Kringle Santa Pat and Mrs. Claus.',
         timecode: '24 Jul 2021 09:00:00 GMT'
     },
 
@@ -48,9 +48,9 @@ function insertEvents() {
                 
                 html += `
                     <li class="event">
-                        <h3 class="eventTitle">${events[i]['title']}</h3>
-                        <p class="eventDate">${events[i]['date']}</p>
-                        <p class="eventDescription">${events[i]['description']}</p>
+                        <h3 class="event-title">${events[i]['title']}</h3>
+                        <p class="event-date">${events[i]['date']}</p>
+                        <p class="event-description">${events[i]['description']}</p>
                     </li>
                 `;
             }

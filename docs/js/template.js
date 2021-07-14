@@ -4,7 +4,7 @@ const footer = document.getElementsByTagName('footer')[0];
 header.innerHTML = `
     <div id="logo">
     <h1>Chad O'Brien</h1>
-    <a href="index.html"><img src="images/logo.png" alt="an abstract illustration of a trombone"></a>
+    <img src="images/logo.png" alt="an abstract illustration of a trombone">
     </div>
 
     <nav>

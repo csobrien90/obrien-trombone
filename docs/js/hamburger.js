@@ -20,7 +20,7 @@ function xToBurger() {
 
 hamburger.addEventListener('click', () => {
     if (navMenu.style.height == 0 || navMenu.style.height == '0px') {
-        navMenu.style.height = '194px';
+        navMenu.style.height = '160px';
         burgerToX();
     } else {
         navMenu.style.height = 0;
