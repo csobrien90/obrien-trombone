@@ -5,11 +5,13 @@
 .blog-post-heading {
     background-color: #557CBA;
     padding: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .blog-post-body {
     background-color: #B3C8E9;
     padding: 20px;
+    border-radius: 0 0 10px 10px;
 }
 
 .post-keywords {
