@@ -12,7 +12,6 @@ header.innerHTML = `
         <li><a href="about.html">About</a></li>
         <li><a href="media.html">Media</a></li>
         <li><a href="connect.html">Connect</a></li>
-        <li><a href="resources.html">Resources</a></li>
         <li><a href="blog.html">Blog</a></li>
     </ul>
     </nav>

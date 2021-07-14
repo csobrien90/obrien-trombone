@@ -25,7 +25,7 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    min-height: 24vw;
+    min-height: 22vw;
 }
 
 #logo {
@@ -40,7 +40,7 @@ header {
     font-family: sans-serif;
     font-weight: 500;
     position: absolute;
-    right: 9vw;
+    right: 8.5vw;
     top: 6vw;
 }
 
@@ -66,7 +66,6 @@ footer {
 }
 
 /* Main Styles */
-
 
 main {
     margin: 1% 0;
@@ -113,7 +112,7 @@ main {
 @media screen and (min-width: 600px) {
     
     header {
-        min-height: 16vw;
+        min-height: 21vw;
     }
     
     main {
@@ -134,7 +133,8 @@ main {
 @media screen and (min-width: 1000px) {
     
     header {
-        min-height: 8vw;
+        min-height: unset;
+        height: 210px;
     }
 
     #wrapper {
