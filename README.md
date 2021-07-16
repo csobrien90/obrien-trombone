@@ -16,6 +16,7 @@ Show/hide one or more content areas or elements on your site through clicking a 
 
 Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page
 
+Create a Javascript loop that dynamically displays HTML on your page - for example displaying a number of list items based on how many times you loop
 ---
 
 ### These features are currently included in the site design. Below are items intended in the final product:
@@ -26,12 +27,11 @@ Use “:nth-child” or “nth-of-type” to style a series of elements on your 
 
 Perform a Web Accessibility Compliance review on your own site and document all the tools and testing you used to verify your site is accessible. This may involve a written write-up, screenshots, and other ways of showing that you evaluated your site for accessibility compliance. Include the report in your GitHub repository.
 
+Create a custom audio player with at least one custom element (such as the progress bar, play button, etc). This is also not covered in the required Treehouse content.
 
 ***JavaScript features***
 
 Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow. For example, display it back to the user on button click, or change a setting on the page based on a section. Having a form that does nothing on clicking Submit or that just refreshes the page is not enough - you must capture the value(s) of the form and use it somehow.
 
 Create and populate a JavaScript array with one or more values and display the contents of some or all of the array on your page
-
-Create a Javascript loop that dynamically displays HTML on your page - for example displaying a number of list items based on how many times you loop
 
