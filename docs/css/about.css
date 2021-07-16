@@ -35,10 +35,29 @@
 
 .elab-links li {
     padding: 10px;
+    cursor: pointer;
+}
+
+.elab-links li:hover {
+    background-color: #38578A;
+    color: #e8eff9;
+}
+
+.inactive {
+    background-color: #B3C8E9;
+}
+
+.active {
+    background-color: #38578A;
+    color: #e8eff9;
 }
 
 .elab-bios {
     flex-grow: 1;
+}
+
+.performing, .teaching, .composing-arranging, .coding, .activism, .urban-farming {
+    display: none;
 }
 
 
