@@ -11,6 +11,11 @@ img {
     width: 100%;
 }
 
+.dots {
+    text-align: center;
+    margin: 5px;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 600px;
