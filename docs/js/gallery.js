@@ -102,8 +102,6 @@ const galleryPics = [
 
 ]
 
-
-
 function loadGallery() {
     var galleryHTML = document.getElementsByClassName('slideshow-container')[0];
     let html = ``;
@@ -141,6 +139,8 @@ function loadGallery() {
 
 loadGallery();
 
+
+// Gallery Functionality
 
 var slideIndex = 1;
 showSlides(slideIndex);
