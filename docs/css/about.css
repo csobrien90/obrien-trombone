@@ -21,17 +21,24 @@
     margin-bottom: 15px;
 }
 
-.about-links {
+.about-elab {
+    display: flex;
+}
+
+.elab-links {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4%;
+    flex-direction: column;
+    width: fit-content;
 }
 
-.about-links li {
-    text-align: center;
+.elab-links li {
     padding: 10px;
-    flex-basis: 100px;
+}
+
+.elab-bios {
+    flex-grow: 1;
 }
 
 
@@ -55,5 +62,18 @@
 }
 
 @media screen and (min-width: 1000px) {
+
+    .elab-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 4%;
+        width: unset;
+    }
+
+    .elab-links li {
+        text-align: center;
+        padding: 10px;
+        flex-basis: 150px;
+    }
 
 }
