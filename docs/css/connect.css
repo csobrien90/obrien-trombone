@@ -12,6 +12,12 @@ main section h2 {
     text-align: center;
 }
 
+.no-gigs {
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
 #events {
     list-style-type: none;
 }
