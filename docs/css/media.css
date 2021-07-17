@@ -25,6 +25,7 @@ h2 {
 
 .video {
   flex-basis: 48%;
+  align-self: flex-start;
 }
 
 .video:first-of-type {
