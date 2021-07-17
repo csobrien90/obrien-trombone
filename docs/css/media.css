@@ -16,6 +16,7 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .media-video h2 {
@@ -35,9 +36,35 @@ iframe {
   margin-bottom: 10px;
 }
 
+.video-caption {
+  max-width: 560px;
+}
+
 .transcription-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
+
+.transcription {
+  width: 100%;
+  margin: 10px auto;
+  }
+
+.transcription a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px grey;
+  text-decoration: none;
+  color: black;
+}
+
+.transcription a:hover {
+  box-shadow: 1px 1px 4px black;
+}
+
 
 /* Gallery Styles */
 
@@ -148,6 +175,15 @@ img {
 @media screen and (min-width: 800px) {
   .media-video {
     flex-direction: row;
+  }
+  
+  .transcription-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .transcription {
+    flex-basis: 45%;
   }
 }
 
