@@ -23,6 +23,7 @@
 
 .about-elab {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .elab-links {
@@ -31,6 +32,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: fit-content;
+    background-color: #B3C8E9;
 }
 
 .elab-links li {
@@ -54,6 +56,9 @@
 
 .elab-bios {
     flex-grow: 1;
+    background-color: #38578A;
+    color: #e8eff9;
+    padding: 20px;
 }
 
 .performing, .teaching, .composing-arranging, .coding, .activism, .urban-farming {
@@ -67,6 +72,7 @@
     .about-overview {
         flex-direction: row;
         align-items: flex-start;
+        margin-bottom: 0;
     }
 
     .headshot {
@@ -78,21 +84,33 @@
     .biography {
         margin: 5% 2%;
     }
+
+    .elab-links li {
+        padding: 10px 40px 10px 20px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
 
-    .elab-links {
+    .about-elab {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0 4%;
-        width: unset;
+    }
+
+    .elab-links {
+        flex-direction: row;
+        width: 100%;
+        flex-basis: 100%;
     }
 
     .elab-links li {
         text-align: center;
         padding: 10px;
-        flex-basis: 150px;
+        width: 166px;
+    }
+
+    .elab-bios {
+        flex-basis: 100%;
     }
 
 }
