@@ -27,7 +27,7 @@ const events = [
         title: 'John Roy\'s Ovation Orchestra',
         date: 'Friday, July 30, 2021 7-9pm',
         description: 'Come hear free traditional big band swing across the river in <strong>Warder Park at 109 E Court Ave, Jeffersonville, Indiana.</strong> Bring lawn chairs or a blanket - and don\'t forget snacks and drinks!',
-        timecode: '17 Jul 2021 20:00:00 GMT'
+        timecode: '30 Jul 2021 20:00:00 GMT'
     }
 
 ]
