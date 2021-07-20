@@ -37,7 +37,7 @@ for (let i = 0; i < bioLinks.length; i++) {
     
     bioLinks[i].addEventListener('click', (event) => {
     
-        var clicked = event.srcElement.id;
+        var clicked = event.target.id;
         
         for (let j=0; j < additionalBios.length; j++) {
         

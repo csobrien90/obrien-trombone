@@ -27,8 +27,8 @@ pause.addEventListener('click', () => {selectedTrack.pause(); showTime})
 
 for (let i = 0; i < tracks.length; i++) {
     tracks[i].addEventListener('click', (event) => {
-        var filename = event.srcElement.parentNode.id;
-        var title = event.srcElement.parentNode.firstElementChild.innerHTML;
+        var filename = event.target.parentNode.id;
+        var title = event.target.parentNode.firstElementChild.innerHTML;
         selectedTrack.src = `files/recordings/${filename}.mp3`
         trackTitle.innerHTML = title;
     })
