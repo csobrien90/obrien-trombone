@@ -21,35 +21,53 @@ function secondsToMinutes(seconds) {
     return(`${minutes}:${formattedSeconds}`)
 }
 
+function togglePlayPause() {
+    if (play.style.display == "block") {
+        play.style.display = "none";
+        pause.style.display = "block";
+    } else if (pause.style.display == "block") {
+        pause.style.display = "none";
+        play.style.display = "block";
+    }
+}
+
 setInterval(showTime, 200);
 
 play.addEventListener('click', () => {
     selectedTrack.play();
     showTime;
-    play.style.display = "none";
-    pause.style.display = "block";
+    togglePlayPause();
 })
 
 pause.addEventListener('click', () => {
     selectedTrack.pause();
     showTime;
-    pause.style.display = "none";
-    play.style.display = "block";
+    togglePlayPause();
 })
 
 for (let i = 0; i < tracks.length; i++) {
     tracks[i].addEventListener('click', (event) => {
-        var filename = event.target.parentNode.id;
-        var title = event.target.parentNode.firstElementChild.innerHTML;
-        var description = event.target.parentNode.lastElementChild.innerHTML;
-        
-        if (play.style.display == "none") {
-            pause.style.display = "none";
-            play.style.display = "block";
+
+        if (event.target.nodeName == "H4") {
+            var filename = event.target.parentNode.id;
+            var title = event.target.parentNode.firstElementChild.innerHTML;
+            var description = event.target.parentNode.lastElementChild.innerHTML;
+            
+            togglePlayPause();
+            
+            selectedTrack.src = `files/recordings/${filename}.mp3`
+            trackTitle.innerHTML = title;
+            trackDescription.innerHTML = description;
+        } else {
+            var filename = event.target.id;
+            var title = event.target.firstElementChild.innerHTML;
+            var description = event.target.lastElementChild.innerHTML;
+            
+            togglePlayPause();
+            
+            selectedTrack.src = `files/recordings/${filename}.mp3`
+            trackTitle.innerHTML = title;
+            trackDescription.innerHTML = description;
         }
-        
-        selectedTrack.src = `files/recordings/${filename}.mp3`
-        trackTitle.innerHTML = title;
-        trackDescription.innerHTML = description;
     })
 }
