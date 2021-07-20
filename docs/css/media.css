@@ -49,6 +49,14 @@ iframe {
   box-shadow: 1px 1px 5px black;
 }
 
+.audio-track p {
+  display: none;
+}
+
+#pause {
+  display: none;
+}
+
 .transcription-list {
   list-style-type: none;
   display: flex;
