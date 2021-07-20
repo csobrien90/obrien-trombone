@@ -1,4 +1,4 @@
-const track = document.getElementById('player');
+const selectedTrack = document.getElementById('player');
 const tracks = document.getElementsByClassName('audio-track');
 const play = document.getElementById('play');
 const pause = document.getElementById('pause');
@@ -8,7 +8,9 @@ const trackTitle = document.getElementById('track-title');
 const trackTime = document.getElementById('track-time');
 
 function showTime() {
-    trackTime.innerHTML = `${secondsToMinutes(Math.floor(player.currentTime))} / ${secondsToMinutes(Math.floor(player.duration))}`;
+    if (player.duration) {
+        trackTime.innerHTML = `${secondsToMinutes(Math.floor(player.currentTime))} / ${secondsToMinutes(Math.floor(player.duration))}`;
+    }
 }
 
 function secondsToMinutes(seconds) {
@@ -20,14 +22,14 @@ function secondsToMinutes(seconds) {
 
 setInterval(showTime, 200);
 
-play.addEventListener('click', () => {track.play(); showTime})
-pause.addEventListener('click', () => {track.pause(); showTime})
+play.addEventListener('click', () => {selectedTrack.play(); showTime})
+pause.addEventListener('click', () => {selectedTrack.pause(); showTime})
 
 for (let i = 0; i < tracks.length; i++) {
     tracks[i].addEventListener('click', (event) => {
         var filename = event.srcElement.parentNode.id;
         var title = event.srcElement.parentNode.firstElementChild.innerHTML;
-        track.src = `files/recordings/${filename}.mp3`
+        selectedTrack.src = `files/recordings/${filename}.mp3`
         trackTitle.innerHTML = title;
     })
 }
