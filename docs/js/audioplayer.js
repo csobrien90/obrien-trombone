@@ -4,6 +4,7 @@ const play = document.getElementById('play');
 const pause = document.getElementById('pause');
 const turnUp = document.getElementById('volume-up');
 const turnDown = document.getElementById('volume-down');
+const trackTitle = document.getElementById('track-title');
 const trackTime = document.getElementById('track-time');
 
 function showTime() {
@@ -17,14 +18,16 @@ function secondsToMinutes(seconds) {
     return(`${minutes}:${formattedSeconds}`)
 }
 
-setInterval(showTime, 1000);
+setInterval(showTime, 200);
 
 play.addEventListener('click', () => {track.play(); showTime})
 pause.addEventListener('click', () => {track.pause(); showTime})
 
 for (let i = 0; i < tracks.length; i++) {
     tracks[i].addEventListener('click', (event) => {
-        const filename = event.srcElement.parentNode.id;
+        var filename = event.srcElement.parentNode.id;
+        var title = event.srcElement.parentNode.firstElementChild.innerHTML;
         track.src = `files/recordings/${filename}.mp3`
+        trackTitle.innerHTML = title;
     })
 }
