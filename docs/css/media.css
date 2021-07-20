@@ -72,6 +72,45 @@ iframe {
   display: none;
 }
 
+#play-graphic {
+  width: 0; 
+  height: 0; 
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 2em solid #e8eff9;  
+  position: absolute;
+  top: 20%;
+  left: 36%;
+}
+
+#pause-graphic {
+  position: absolute;
+  top: 22%;
+  left: 20%;
+}
+
+.pause-line {
+  display: inline-block;
+  margin: 0 .5em;
+  width: .5em;
+  height: 2.75em;
+  background-color: #e8eff9;
+  border-radius: 10px;
+}
+
+.play-pause-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #be6a52;
+}
+
+.play-pause-wrapper:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px white;
+}
+
 .transcription-list {
   list-style-type: none;
   display: flex;
