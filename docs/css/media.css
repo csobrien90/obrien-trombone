@@ -61,6 +61,10 @@ iframe {
   justify-content: space-around;
 }
 
+.audio-controls p {
+  padding-top: 10px;
+}
+
 .selected-track {
   flex: 2;
   text-align: center;
@@ -72,10 +76,11 @@ iframe {
 }
 
 .audio-track {
+  display: block;
   padding: 5px;
   background-color: #be6a52;
   color: black;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .first-track {
