@@ -21,8 +21,8 @@ function secondsToMinutes(seconds) {
     return(`${minutes}:${formattedSeconds}`)
 }
 
-function togglePlayPause() {
-    if (play.style.display == "block") {
+function togglePlayPause(status) {
+    if (play.style.display == "block" && status !== 1) {
         play.style.display = "none";
         pause.style.display = "block";
     } else if (pause.style.display == "block") {
@@ -53,7 +53,7 @@ for (let i = 0; i < tracks.length; i++) {
             var title = event.target.parentNode.firstElementChild.innerHTML;
             var description = event.target.parentNode.lastElementChild.innerHTML;
             
-            togglePlayPause();
+            togglePlayPause(1);
             
             selectedTrack.src = `files/recordings/${filename}.mp3`
             trackTitle.innerHTML = title;
@@ -63,7 +63,7 @@ for (let i = 0; i < tracks.length; i++) {
             var title = event.target.firstElementChild.innerHTML;
             var description = event.target.lastElementChild.innerHTML;
             
-            togglePlayPause();
+            togglePlayPause(1);
             
             selectedTrack.src = `files/recordings/${filename}.mp3`
             trackTitle.innerHTML = title;
