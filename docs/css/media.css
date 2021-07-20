@@ -41,6 +41,14 @@ iframe {
   max-width: 560px;
 }
 
+.audio-track {
+  border: 1px solid black;
+}
+
+.audio-track:hover {
+  box-shadow: 1px 1px 5px black;
+}
+
 .transcription-list {
   list-style-type: none;
   display: flex;
@@ -49,7 +57,7 @@ iframe {
 
 .transcription {
   width: 100%;
-  margin: 10px auto;
+  margin: 5px auto;
   }
 
 .transcription a {
@@ -192,6 +200,7 @@ img {
 
   .transcription {
     flex-basis: 45%;
+    margin: 10px auto;
   }
 }
 
