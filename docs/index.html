@@ -4,19 +4,52 @@
         <meta charset="utf-8">
         <title>Chad O'Brien</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
     
     <body>
         <div id="wrapper">
 
-            <header></header>
-
+            <header>
+                <div id="logo">
+                <h1>Chad O'Brien</h1>
+                <img src="images/logo.png" alt="an abstract illustration of a trombone">
+                </div>
+            </header>
+            <main>
+                <img src="images/chad-wide.jpg">
+                <article class="welcome">
+                    <h2>Welcome</h2>
+                    <p>Use the links below to find out anything and everything you need to know about me, Chad O'Brien!</p>
+                </article>
+                <nav>
+                    <a href="about.html">
+                        <h3 class="link-heading">About</h3>
+                        <p class="link-description"></p>
+                    </a>
+                    <a href="media.html">
+                        <h3 class="link-heading">Media</h3>
+                        <p class="link-description"></p>
+                    </a>
+                    <a href="connect.html">
+                        <h3 class="link-heading">Connect</h3>
+                        <p class="link-description"></p>
+                    </a>
+                    <a href="blog.html">
+                        <h3 class="link-heading">Blog</h3>
+                        <p class="link-description"></p>
+                    </a>
+                </nav>
+            </main>
             <footer></footer>
         
         </div>
     </body>
-    <script src="js/template.js"></script>
-    <script src="js/hamburger.js"></script>
+    <script>
+        const footer = document.getElementsByTagName('footer')[0];
+        const year = new Date().getFullYear();
+        footer.innerHTML = `
+            &copy; Copyright ${year} - Chad O'Brien
+        `;
+    </script>
 </html>
