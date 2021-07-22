@@ -254,24 +254,6 @@ img {
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
-
-
 /* Media Queries */
 
 @media screen and (min-width: 600px) {

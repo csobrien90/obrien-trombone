@@ -116,7 +116,7 @@ function loadGallery() {
     for (let i = 0; i < galleryPics.length; i++) {
                             
         html += `
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">${i + 1} / ${galleryPics.length}</div>
                 <img src="${galleryPics[i]['src']}">
                 <div class="text">${galleryPics[i]['caption']}</div>
