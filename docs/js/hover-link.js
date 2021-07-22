@@ -14,3 +14,15 @@ for (let i = 0; i < links.length; i++) {
         setTimeout(() => {event.target.lastElementChild.style.padding = "0 20px";}, 100);
     })
 }
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 800) {
+        for (let i = 0; i < links.length; i++) {
+            links[i].lastElementChild.style.maxHeight = "initial";
+        }
+    } else if (window.innerWidth > 799) {
+        for (let i = 0; i < links.length; i++) {
+            links[i].lastElementChild.style.maxHeight = "0";
+        }
+    }
+})
