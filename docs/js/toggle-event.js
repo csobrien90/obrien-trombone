@@ -1,4 +1,8 @@
+//Connect to the DOM
+
 const eventHeading = document.getElementsByClassName('event-heading')
+
+//Expand and retract event description on click
 
 for (let i = 0; i < eventHeading.length; i++) {
     eventHeading[i].addEventListener('click', (event) => {

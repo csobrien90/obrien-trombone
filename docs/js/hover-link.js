@@ -1,4 +1,8 @@
+//Connect to the DOM
+
 const links = document.getElementsByTagName("a");
+
+//Event listeners for hover effect that expands link descriptions
 
 for (let i = 0; i < links.length; i++) {
     
@@ -16,6 +20,8 @@ for (let i = 0; i < links.length; i++) {
         }
     })
 }
+
+//Compensate for hover style changes when resizing browser
 
 window.addEventListener('resize', () => {
     if (window.innerWidth < 800) {

@@ -1,5 +1,9 @@
+//Connect to the DOM
+
 const header = document.getElementsByTagName('header')[0];
 const footer = document.getElementsByTagName('footer')[0];
+
+//HTML to load in
 
 header.innerHTML = `
     <div id="logo">

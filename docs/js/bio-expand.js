@@ -1,3 +1,5 @@
+//Insertable bio text
+
 const additionalBios = [
     {
         category: "performing",
@@ -30,8 +32,12 @@ const additionalBios = [
     }
 ]
 
+//Connect to the DOM
+
 const bioLinks = document.querySelectorAll(".elab-links li");
 const elabText = document.getElementsByClassName("elab-text")[0];
+
+//Event listeners for elab-bio selection and display
 
 for (let i = 0; i < bioLinks.length; i++) {
     

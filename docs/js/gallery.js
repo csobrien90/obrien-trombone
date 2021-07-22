@@ -1,3 +1,5 @@
+//List of pictures and associated caption text
+
 const galleryPics = [
     
     {
@@ -102,6 +104,8 @@ const galleryPics = [
 
 ]
 
+//Iterate through pictures object and insert HTML
+
 function loadGallery() {
     var galleryHTML = document.getElementsByClassName('slideshow-container')[0];
     let html = ``;
@@ -140,7 +144,7 @@ function loadGallery() {
 loadGallery();
 
 
-// Gallery Functionality
+// Gallery functionality - based on W3 Schools tutorial
 
 var slideIndex = 1;
 showSlides(slideIndex);

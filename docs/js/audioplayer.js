@@ -1,3 +1,5 @@
+//Connect to DOM
+
 const selectedTrack = document.getElementById('player');
 const tracks = document.getElementsByClassName('audio-track');
 const play = document.getElementById('play');
@@ -7,6 +9,8 @@ const turnDown = document.getElementById('volume-down');
 const trackTitle = document.getElementById('track-title');
 const trackDescription = document.getElementById('track-description');
 const trackTime = document.getElementById('track-time');
+
+//Functions
 
 function showTime() {
     if (player.duration) {
@@ -21,7 +25,8 @@ function secondsToMinutes(seconds) {
     return(`${minutes}:${formattedSeconds}`)
 }
 
-function togglePlayPause(status) {
+function togglePlayPause(status) { 
+    //"status" indicates whether the button is being pressed or play should toggle to pause due to track switch
     if (play.style.display == "block" && status !== 1) {
         play.style.display = "none";
         pause.style.display = "block";
@@ -31,7 +36,11 @@ function togglePlayPause(status) {
     }
 }
 
+//Update track time
+
 setInterval(showTime, 200);
+
+//Event listeners to play and pause selected track
 
 play.addEventListener('click', () => {
     selectedTrack.play();
@@ -44,6 +53,8 @@ pause.addEventListener('click', () => {
     showTime;
     togglePlayPause();
 })
+
+//Event listeners to switch tracks and dislay selected track info
 
 for (let i = 0; i < tracks.length; i++) {
     tracks[i].addEventListener('click', (event) => {

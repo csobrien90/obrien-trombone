@@ -1,4 +1,4 @@
-//List of Events
+//List of events
 
 const events = [
     
@@ -32,7 +32,7 @@ const events = [
 
 ]
 
-//Functions
+//Check events for modernity and insert only upcoming events into HTML
 
 function insertEvents() {
 

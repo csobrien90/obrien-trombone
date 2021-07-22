@@ -1,8 +1,12 @@
+//Connect to the DOM
+
 const hamburger = document.getElementById('hamburger-icon');
 const navMenu = document.getElementsByTagName('nav')[0];
 const topLine = document.getElementsByClassName('top')[0];
 const bottomLine = document.getElementsByClassName('bottom')[0];
 const middleLine = document.getElementsByClassName('middle')[0];
+
+//Animations
 
 function burgerToX() {
     middleLine.style.height = '0';
