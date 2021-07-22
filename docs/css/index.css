@@ -73,12 +73,16 @@ main img {
     position: absolute;
     color: white;
     width: 60%;
-    padding: 5%;
+    padding: 2% 3%;
     top: 10vw;
     right: 4%;
     background-color: rgba(0, 0, 0, .4);
     border-radius: 10px;
     text-align: center;
+}
+
+.welcome h2 {
+    margin-bottom: 10px;
 }
 
 nav a {
@@ -107,7 +111,11 @@ nav a:hover {
 
 /* Media Queries */
 
-
+@media screen and (min-width: 600px) {
+    .welcome {
+        font-size: 1.2rem;
+    }
+}
 @media screen and (min-width: 800px) {
 
     #logo h1 {
@@ -127,6 +135,11 @@ nav a:hover {
         top: 5vw;
         border-radius: 10px 10px 0 0;
         height: 200px;
+        padding: 2% 5%;
+    }
+
+    .welcome h2 {
+        margin-bottom: 20px;
     }
 
     nav {
@@ -200,6 +213,7 @@ nav a:hover {
 
     .welcome {
         top: 50px;
+        padding: 3% 5%;
     }
 
     nav {
