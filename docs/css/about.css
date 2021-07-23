@@ -16,6 +16,7 @@
 .biography {
     flex-grow: 5;
     text-align: center;
+    padding: 0 20px;
 }
 
 .biography h2 {
@@ -24,7 +25,7 @@
 
 .about-elab {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .elab-links {
@@ -59,10 +60,31 @@
     flex-grow: 1;
     background-color: #38578A;
     color: #e8eff9;
-    padding: 20px;
+    padding: 10px;
 }
 
-.performing, .teaching, .composing-arranging, .coding, .activism, .urban-farming {
+.elab-bios a {
+    display: inline;
+    color: #e8eff9;
+}
+
+.elab-bios a:hover {
+    font-weight: bold;
+}
+
+.elab-bios ul {
+    list-style-type: none;
+}
+
+.elab-bios ul li {
+    margin-top: 10px;
+}
+
+.elab-bios ul li:first-of-type {
+    margin-top: 5px;
+}
+
+.performing, .teaching, .writing, .coding, .activism, .urban-farming {
     display: none;
 }
 
@@ -83,11 +105,18 @@
     }
 
     .biography {
+        font-size: 1.25rem;
         margin: 5% 2%;
     }
 
     .elab-links li {
+        font-size: 1.5rem;
         padding: 10px 40px 10px 20px;
+    }
+
+    .elab-bios {
+        font-size: 1.25rem;
+        padding: 20px;
     }
 }
 
@@ -112,6 +141,7 @@
 
     .elab-bios {
         flex-basis: 100%;
+        padding: 30px;
     }
 
 }
