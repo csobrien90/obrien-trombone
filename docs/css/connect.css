@@ -32,8 +32,10 @@ main section h2 {
 }
 
 .event-heading {
-    background-color: #557CBA;
+    background-color: #38578A;
+    color: #e8eff9;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .event-title, .event-date {
@@ -49,10 +51,12 @@ main section h2 {
 }
 
 .event-description {
+    padding: 0 15px;
     background-color: #B3C8E9;
     border-radius: 0 0 10px 10px;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
+    transition: all .3s;
 }
 
 .connect-contact form {

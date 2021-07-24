@@ -157,6 +157,7 @@ iframe {
   padding: 10px;
   width: 100%;
   border: 1px solid grey;
+  border-radius: 10px;
   box-shadow: 1px 1px 1px grey;
   text-decoration: none;
   color: black;
@@ -259,6 +260,14 @@ img {
 @media screen and (min-width: 600px) {
   .text {
     font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  
+  .video-caption {
+    font-size: 1.25rem;
   }
 }
 

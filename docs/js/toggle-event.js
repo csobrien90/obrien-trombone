@@ -10,14 +10,14 @@ for (let i = 0; i < eventHeading.length; i++) {
             var heading = event.target.parentElement;
             var description = event.target.parentElement.nextElementSibling;
             
-            if (description.style.height == 0 || description.style.height == "0px") {
-                heading.style.borderRadius = "10px 10px 0 0";
-                description.style.height = "unset";
+            if (description.style.maxHeight == 0 || description.style.maxHeight == "0px") {
                 description.style.padding = "10px 15px 15px";
+                description.style.maxHeight = "200px";
+                heading.style.borderRadius = "10px 10px 0 0";
             } else {
-                heading.style.borderRadius = "10px";
-                description.style.height = 0;
-                description.style.padding = 0;  
+                description.style.padding = "0 15px";
+                description.style.maxHeight = 0;
+                setTimeout(() => {heading.style.borderRadius = "10px"}, 200);
             }
         })
     }
