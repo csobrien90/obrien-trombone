@@ -1,6 +1,7 @@
 main {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 main section {
@@ -74,7 +75,8 @@ main section h2 {
 }
 
 #name, #email {
-    width: 50%;
+    width: 75%;
+    min-height: 1.75rem;
 }
 
 #message {
@@ -89,9 +91,13 @@ main section h2 {
 
 /* Media Queries */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     main {
         flex-direction: row;
+    }
+    
+    main section {
+        padding: 10px;
     }
 
     #event {
@@ -106,10 +112,6 @@ main section h2 {
         flex: 1;
     }
 
-    #name, #email {
-        width: 200px;
-    }
-    
 }
 
 
@@ -117,4 +119,5 @@ main section h2 {
     #event {
         padding: 20px;
     }
+
 }
