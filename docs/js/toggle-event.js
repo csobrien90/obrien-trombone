@@ -12,7 +12,7 @@ for (let i = 0; i < eventHeading.length; i++) {
             
             if (description.style.maxHeight == 0 || description.style.maxHeight == "0px") {
                 description.style.padding = "10px 15px 15px";
-                description.style.maxHeight = "400px";
+                description.style.maxHeight = "600px";
                 heading.style.borderRadius = "10px 10px 0 0";
             } else {
                 description.style.padding = "0 15px";
