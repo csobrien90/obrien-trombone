@@ -49,9 +49,11 @@ main section h2 {
 
 .event-date {
     padding: 0 10px 10px;
+    font-size: 1.25rem;
 }
 
 .event-description {
+    font-size: 1.15rem;
     padding: 0 15px;
     background-color: #B3C8E9;
     border-radius: 0 0 10px 10px;
@@ -111,13 +113,20 @@ main section h2 {
     .connect-contact {
         flex: 1;
     }
-
 }
 
 
 @media screen and (min-width: 1000px) {
     #event {
         padding: 20px;
+    }
+    
+    .event-title, .event-date {
+        font-size: 1.4rem;
+    }
+
+    .event-description {
+        font-size: 1.25rem;
     }
 
 }
