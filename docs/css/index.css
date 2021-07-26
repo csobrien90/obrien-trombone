@@ -96,6 +96,10 @@ nav a {
     padding: 10px;
 }
 
+nav a:nth-of-type(n + 2) {
+    border-top: 0;
+}
+
 nav a:hover {
     background-color: #38578A;
     color: #e8eff9;

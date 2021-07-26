@@ -4,15 +4,26 @@
 
 ## CSS features
 
-A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
+Navigation menu is responsive, switching between an expanding/collapsing vertical menu (with an illustrated hamburger button) on screens narrower than 600px to a horizontal menu on larger screens.
 
-Use Flexbox to organize content areas based on mobile or desktop views. Simply applying a basic flex property so that text wraps as you change screen sizes does not count. You must actually rearrange content or perform some more advanced feature. For example, swapping from a single column layout to a two-column layout on desktop.
+Hamburger navigation button is animated and changes to 'X' when open.
 
-Create your own original CSS animation. For example, create a loading spinner or menu animation. Note: CSS Animations are not included in the assigned Treehouse track, you will have to research this on your own
+Flexbox is used throughout to organize content areas based on mobile/tablet/desktop views:
+- About: headshot and general bio switch from default single- to two-column layout on larger screens, bio elaboration section moves from vertical menu beside text content area to horiztonal menu above text content
+- Media: video and transcription sections switch from single- to two-column layout on larger screens
+- Connect: upcoming events and contact switch from single- to two-column layout on larger screens
+
+Audio player (on media page) is custom - play and pause buttons are illustrated using CSS as well.
+
+Index page styles navigation using :nth-of-type (to make border width around navigation links even) and :last-of-type (to round navigation menu corners on larger screens).
 
 ## JavaScript features
 
-Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction - must be done with some JavaScript code. 
+JavaScript is used to show/hide/alternate content throughout the site:
+- Index: on larger screens, hovering over links reveals description of each page's content (descriptions disappear on 'mouseleave')
+- About: bio elaborations are accessed by clicking on subject, this is done by loading in content from js file (as opposed to changing display or height styles)
+- Media: audio player functionality, including ability to cycle through multiple tracks, is done using JavaScript
+- Connect: event descriptions are hidden by default and revealed by clicking, JavaScript handles 'click' event and animates expansion by changing max-height style
 
 Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page
 
@@ -23,11 +34,8 @@ Create a Javascript loop that dynamically displays HTML on your page - for examp
 
 ***CSS features***
 
-Use “:nth-child” or “nth-of-type” to style a series of elements on your page - for example, change the background color for every other row in a table 
-
 Perform a Web Accessibility Compliance review on your own site and document all the tools and testing you used to verify your site is accessible. This may involve a written write-up, screenshots, and other ways of showing that you evaluated your site for accessibility compliance. Include the report in your GitHub repository.
 
-Create a custom audio player with at least one custom element (such as the progress bar, play button, etc). This is also not covered in the required Treehouse content.
 
 ***JavaScript features***
 
