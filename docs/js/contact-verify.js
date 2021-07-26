@@ -1,6 +1,9 @@
+//Initial DOM connection
 const email = document.getElementById('email');
 const emailVerification = document.getElementsByClassName('verify')[0];
 const humanityVerification = document.getElementsByClassName('simple-math')[0];
+
+//Event listener for email validation
 
 email.addEventListener('input', () => {
     var validity = validateEmail(email.value);
@@ -8,6 +11,13 @@ email.addEventListener('input', () => {
         emailVerification.innerHTML = "This is not a valid email!";
     } else {emailVerification.innerHTML = "";}
 })
+
+//Functions
+
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
 
 function generateMath() {
     var numb1 = getRandomInt(9);
@@ -22,12 +32,9 @@ function generateMath() {
 function getRandomInt(max) {
     let int = 1 + Math.floor(Math.random() * max);
     return(int);
-  }
-
-function validateEmail(email) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
 }
+
+//Insert simple math equation as anti-bot measure
 
 var answer = generateMath();
 
