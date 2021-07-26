@@ -32,12 +32,17 @@
 
                 <section class="connect-contact">
                     <h2>Contact</h2>
-                    <form method="post" action="">
+                    <form method="post" action="php/contact-form.php" id="contact-form">
                         <span class="contact-line"><label for="name">Name</label><input type="text" id="name" name="contactName"></span>
-                        <span class="contact-line"><label for="email">Email</label><input type="email" id="email" name="contactEmail"></span>
+                        <span class="contact-line"><label for="email">Email</label><input type="email" id="email" name="contactEmail"></span><p class="verify"></p>
                         <span class="contact-line"><label for="message">Message</label><textarea id="message" name="contactMessage"></textarea></span>
                         <span class="contact-line"><input type="button" value="Submit"></span>
                     </form>
+                    <script>
+                        document.getElementById("contact-form").addEventListener("submit", () => { 
+                            window.alert("Your message has been sent - thank you for reaching out!");
+                        })
+                    </script>
                 </section>
 
             </main>
@@ -50,4 +55,5 @@
 <script src="js/hamburger.js"></script>
 <script src="js/event-update.js"></script>
 <script src="js/toggle-event.js"></script>
+<script src="js/contact-verify.js"></script>
 </html>
