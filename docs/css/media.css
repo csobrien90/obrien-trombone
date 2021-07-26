@@ -41,6 +41,14 @@ iframe {
   max-width: 560px;
 }
 
+.video-caption a {
+  color: black;
+}
+
+.video-caption a:hover {
+  font-weight: bold;
+}
+
 #custom-audio-player {
   max-width: 600px;
   background-color: #883e31;
