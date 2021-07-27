@@ -25,21 +25,6 @@ JavaScript is used to show/hide/alternate content throughout the site:
 - Media: audio player functionality, including ability to cycle through multiple tracks, is done using JavaScript
 - Connect: event descriptions are hidden by default and revealed by clicking, JavaScript handles 'click' event and animates expansion by changing max-height style
 
-Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page
+Event-update.js file loops through 'events' object of arrays, checking each event date and inserting only future events into the HTML.
 
-Create a Javascript loop that dynamically displays HTML on your page - for example displaying a number of list items based on how many times you loop
----
-
-### These features are currently included in the site design. Below are items intended in the final product:
-
-***CSS features***
-
-Perform a Web Accessibility Compliance review on your own site and document all the tools and testing you used to verify your site is accessible. This may involve a written write-up, screenshots, and other ways of showing that you evaluated your site for accessibility compliance. Include the report in your GitHub repository.
-
-
-***JavaScript features***
-
-Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow. For example, display it back to the user on button click, or change a setting on the page based on a section. Having a form that does nothing on clicking Submit or that just refreshes the page is not enough - you must capture the value(s) of the form and use it somehow.
-
-Create and populate a JavaScript array with one or more values and display the contents of some or all of the array on your page
-
+Contact-verify.js validates email format for contact form on connect page and generates a random simple math problem for users to solve in order to submit (hopefully this prevents bot submissions). This contact form pushes an alert to thank users for submitting, then uses contact-form.php to email form data to me.
