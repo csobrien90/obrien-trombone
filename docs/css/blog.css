@@ -15,7 +15,8 @@
     border-radius: 0 0 10px 10px;
 }
 
-.blog-post img {
+.blog-post-body img {
+    display: block;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -36,13 +37,11 @@
 /* Media Queries */
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
     .blog-post img {
-        max-width: 40%;
-        margin: 0;
+        max-width: 50%;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    
 }
