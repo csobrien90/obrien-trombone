@@ -15,10 +15,16 @@
     border-radius: 0 0 10px 10px;
 }
 
-.blog-post-body img {
+.blog-post-body img, .caption {
     display: block;
     max-width: 90%;
     margin: 0 auto;
+}
+
+.caption {
+    text-align: center;
+    font-size: .85rem;
+    padding: 5px;
 }
 
 .post-keywords {
@@ -38,7 +44,7 @@
 
 
 @media screen and (min-width: 750px) {
-    .blog-post img {
+    .blog-post img, .caption {
         max-width: 50%;
     }
 }
