@@ -2,14 +2,23 @@
 const email = document.getElementById('email');
 const emailVerification = document.getElementsByClassName('verify')[0];
 const humanityVerification = document.getElementsByClassName('simple-math')[0];
+const emailStatus = document.getElementsByClassName('email-status')[0];
 
 //Event listener for email validation
 
 email.addEventListener('input', () => {
     var validity = validateEmail(email.value);
     if (!validity && email.value !== "") {
-        emailVerification.innerHTML = "This is not a valid email!";
-    } else {emailVerification.innerHTML = "";}
+        emailVerification.innerHTML = "Please enter a valid email";
+        emailStatus.src = "images/email-x.png";
+        emailStatus.style.display = "inline-block";
+    } else if (validity && email.value !== "") {
+        emailVerification.innerHTML = "";
+        emailStatus.src = "images/email-check.png";
+    } else {
+        emailVerification.innerHTML = "";
+        emailStatus.style.display = "none";
+    }
 })
 
 //Functions
