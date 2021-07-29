@@ -2,6 +2,10 @@
     margin: 20px;
 }
 
+.blog-post {
+    font-size: 1rem;
+}
+
 .blog-post-heading {
     background-color: #38578A;
     color: #e8eff9;
@@ -15,9 +19,20 @@
     border-radius: 0 0 10px 10px;
 }
 
+.blog-post-pic-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-pic {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
 .blog-post-body img, .caption {
     display: block;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -44,8 +59,26 @@
 
 
 @media screen and (min-width: 750px) {
-    .blog-post img, .caption {
+    .blog-post {
+        font-size: 1.2rem;
+    }
+    
+    .blog-post-pic-pair {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .paired-text {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .blog-post-pic {
         max-width: 50%;
+    }
+
+    .caption {
+        font-size: 1rem;
     }
 }
 
