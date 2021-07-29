@@ -108,7 +108,7 @@ main section h2 {
     margin-top: 5px;
 }
 
-.contact-line input[type="button"] {
+.contact-line input[type="submit"] {
     padding: 5px;
     font-size: 1.3rem;
 }
