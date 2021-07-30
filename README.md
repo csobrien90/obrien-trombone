@@ -1,6 +1,6 @@
 # Chad O'Brien Web Site
 
-*This website is my landing page as a freelance musician. It is a mobile-first, responsive design using HTML5, CSS3, and JavaScript. This site also serves as my final project for the Code Louisville Front End Web Development class; below are the CSS and JS features required for successful completion of the course.*
+*This website is my landing page as a freelance musician. It is a mobile-first, responsive design using HTML5, CSS3, JavaScript, and a little PHP. This site also serves as my final project for the Code Louisville Front End Web Development class; below are the CSS and JS features required for successful completion of the course. You can view the live site at <http://www.obrientrombone.com>*
 
 ## CSS features
 
