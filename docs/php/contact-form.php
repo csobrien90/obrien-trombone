@@ -6,7 +6,7 @@ function console_log( $data ){
     echo '</script>';
 }
 
-$to = 'obrien.music@gmail.com';
+$to = 'chad@obrientrombone.com';
 $subject = 'New Message from obrientrombone.com Contact Form!';
 $name = $_POST['contactName'];
 $email = $_POST['contactEmail'];
