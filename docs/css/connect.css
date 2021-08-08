@@ -80,6 +80,11 @@ main section h2 {
     margin-bottom: 5px;
 }
 
+.bot-trick {
+    position: absolute;
+    left: -5000px;
+}
+
 #name, #email {
     width: 75%;
     min-height: 1.75rem;

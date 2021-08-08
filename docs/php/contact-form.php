@@ -6,6 +6,7 @@ function console_log( $data ){
     echo '</script>';
 }
 
+$honeypot = $_POST['honeyPot'];
 $to = 'chad@obrientrombone.com';
 $subject = 'New Message from obrientrombone.com Contact Form!';
 $name = $_POST['contactName'];
@@ -14,7 +15,10 @@ $message = wordwrap($_POST['contactMessage']);
 
 $body = "Name: $name\nEmail: $email\n\nMessage: $message";
 
-mail($to, $subject, $body);
+if (!$honeypot) {
+    mail($to, $subject, $body);
+}
+
 header("Location: ../connect.html");
 
 
