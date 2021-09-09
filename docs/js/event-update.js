@@ -58,6 +58,27 @@ const events = [
         timecode: '05 Sep 2021 20:00:00 GMT'
     },
 
+    {
+        title: 'Harlem of the South Soiree',
+        date: 'Friday, September 17th, 2021 6pm',
+        description: 'Join Russell: Place of Promise at Norton Sports and Learning Complex located at 3029 W Muhammad Ali Blvd for the Harlem of the South Soiree! Louisville Jazz Initiative artists will kick off this fantastic event with a mix of old and new jazz: standards representing Harlem and the Harlem Renaissance side by side with original compositions by local composers.',
+        timecode: '17 Sep 2021 20:00:00 GMT'
+    },
+
+    {
+        title: 'Public Conert at the Portland Library',
+        date: 'Saturday, October 16th, 2021 2-4pm',
+        description: 'Join the Louisville Jazz Initiative for a free public performance at the Portland branch of the Lousiville Free Public Library at 3305 Northwestern Pky. This concert will feature some of the top jazz professionals in town playing new, original music by local composers - you won\'t want to miss it!',
+        timecode: '16 Oct 2021 20:00:00 GMT'
+    },
+
+    {
+        title: 'Old Lou\'s Ragtime Band',
+        date: 'Saturday, October 23rd, 2021 4-6pm',
+        description: 'Come to <strong>TEN20 Brewery at 1020 E Washington St</strong> to enjoy some good food and even better beer, all while listening to early jazz music from Old Lou\'s Ragtime Band!',
+        timecode: '23 Oct 2021 20:00:00 GMT'
+    }
+
 ]
 
 //Check events for modernity and insert only upcoming events into HTML
