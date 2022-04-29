@@ -39,21 +39,37 @@ const elabText = document.getElementsByClassName("elab-text")[0];
 
 //Event listeners for elab-bio selection and display
 
-for (let i = 0; i < bioLinks.length; i++) {
-    
-    bioLinks[i].addEventListener('click', (event) => {
-    
+bioLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+
         var clicked = event.target.id;
-        
-        for (let j=0; j < additionalBios.length; j++) {
-        
-            if (additionalBios[j]['category'] !== clicked) {
-                bioLinks[j].className = "inactive";
-            } else if (additionalBios[j]['category'] == clicked && bioLinks[j].className !== "active") {
-                elabText.innerHTML = additionalBios[j]['text'];
-                bioLinks[j].className = "active";
+
+        for (let i=0; i < additionalBios.length; i++) {
+
+            if (additionalBios[i]['category'] !== clicked) {
+                bioLinks[i].className = "inactive";
+            } else if (additionalBios[i]['category'] == clicked && bioLinks[i].className !== "active") {
+                elabText.innerHTML = additionalBios[i]['text'];
+                bioLinks[i].className = "active";
             }
 
         }
     })
-}
+
+    link.addEventListener('keyup', (event) => {
+        if (event.which === 13) {
+            var clicked = event.target.id;
+    
+            for (let i=0; i < additionalBios.length; i++) {
+    
+                if (additionalBios[i]['category'] !== clicked) {
+                    bioLinks[i].className = "inactive";
+                } else if (additionalBios[i]['category'] == clicked && bioLinks[i].className !== "active") {
+                    elabText.innerHTML = additionalBios[i]['text'];
+                    bioLinks[i].className = "active";
+                }
+    
+            }
+        }
+    })
+});
