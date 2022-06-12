@@ -1,48 +1,44 @@
 <!DOCTYPE html lang="en-US">
-    
-    <head>
-        <meta charset="utf-8">
-        <title>Connect | Chad O'Brien</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/connect.css">
-    </head>
-    
-    <body>
-        <div id="wrapper">
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Connect | Chad O'Brien</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/connect.css">
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
 
-            <header></header>            
+			<header></header>            
 
-            <main>
-          
-                <section class="connect-gigs">
-                    <h2>Upcoming Events</h2>
-                    <ul id="events"></ul>
-                </section>
+			<main>
+		  
+				<section class="connect-gigs">
+					<h2>Upcoming Events</h2>
+					<ul id="events"></ul>
+				</section>
 
-                <section class="connect-contact">
-                    <h2>Contact</h2>
-                    <form method="post" action="php/contact-form.php" id="contact-form">
-                        <span class="contact-line"><label for="name">Name</label><input type="text" id="name" name="contactName"></span>
-                        <span class="contact-line"><label for="email">Email</label><input type="email" id="email" name="contactEmail"><img src="images/email-x.png" class="email-status"><p class="verify"></p></span>
-                        <span class="bot-trick"><label for="honey-pot">Address</label><input type="text" id="honey-pot" name="honeyPot" tabindex="-1"></span>
-                        <span class="contact-line"><label for="message">Message</label><textarea id="message" name="contactMessage"></textarea></span>
-                        <span class="contact-line"><label class="simple-math"></label></span>
-                        <span class="contact-line"><input type="submit" value="Submit" id="form-submit" disabled></span>
-                    </form>
-                    <script>
-                        document.getElementById("contact-form").addEventListener("submit", () => { 
-                            window.alert("Your message has been sent - thank you for reaching out!");
-                        })
-                    </script>
-                </section>
+				<section class="connect-contact">
+					<h2>Contact</h2>
+					<form method="post" action="php/contact-form.php" id="contact-form">
+						<span class="contact-line"><label for="name">Name</label><input type="text" id="name" name="contactName" required></span>
+						<span class="contact-line"><label for="email">Email</label><input type="email" id="email" name="contactEmail" required><img src="images/email-x.png" class="email-status"><p class="verify"></p></span>
+						<span class="bot-trick"><label for="honey-pot">Address</label><input type="text" id="honey-pot" name="honeyPot" tabindex="-1"></span>
+						<span class="contact-line"><label for="message">Message</label><textarea id="message" name="contactMessage" required></textarea></span>
+						<div class="g-recaptcha" data-sitekey="6Ldc0mIgAAAAADVQ0ocOVSplqnxZjKBJ9LYteHeV"></div>
+						<span class="contact-line"><input type="submit" value="Submit" id="form-submit"></span>
+					</form>
+				</section>
 
-            </main>
+			</main>
 
-            <footer></footer>
-        
-        </div>
-    </body>
+			<footer></footer>
+		
+		</div>
+	</body>
 <script src="js/template.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/event-update.js"></script>
