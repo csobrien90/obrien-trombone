@@ -38,7 +38,6 @@ if($response->success) {
 }
 
 header('Content-Type: application/json');
-// echo '{"message":"'.$message.'"}';
 echo '{"message":"'.$message.'"}';
 die();
 
